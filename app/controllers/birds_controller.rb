@@ -1,10 +1,10 @@
 class BirdsController < ApplicationController
 
-  def increment_likes
-    bird = Bird.find(params[:id])
-    bird.update(likes: bird.likes + 1)
-    render json: bird
-  end
+  # def increment_likes
+  #   bird = Bird.find(params[:id])
+  #   bird.update(likes: bird.likes + 1)
+  #   render json: bird
+  # end
 
   def update
     bird = Bird.find(params[:id])
